@@ -24,8 +24,7 @@ This project serves as a comprehensive learning exercise covering the following 
 ### 3. **Scaling Strategies**
    - **MinMaxScaler**: For discrete features and ordinal encoded features
    - **RobustScaler**: For continuous features with outliers
-   - **StandardScaler**: When appropriate
-   - Understanding when and why to apply different scaling methods
+
 
 ### 4. **Encoding Techniques**
    - **Ordinal Encoding**: For features with natural order (quality ratings)
@@ -35,10 +34,7 @@ This project serves as a comprehensive learning exercise covering the following 
 
 ### 5. **Feature Engineering**
    - Creating derived features (e.g., age features from year features)
-   - Handling zero-inflated distributions
-   - Log transformations for skewed features
-   - Cyclical feature encoding (e.g., month of sale)
-   - Decomposition strategies for complex distributions
+
 
 ### 6. **Feature Selection**
    - Variance-based selection (VarianceThreshold)
@@ -82,37 +78,3 @@ This score represents a significant improvement from the initial baseline and de
 - Careful feature engineering
 - Systematic model selection and hyperparameter tuning
 - Ensemble methods
-
-## Repository Structure
-
-```
-housing_kaggle/
-├── data/
-│   ├── train.csv
-│   ├── test.csv
-│   └── sample_submission.csv
-├── models/
-│   ├── best_catboost.pkl
-│   ├── best_xgboost.pkl
-│   ├── best_lightgbm.pkl
-│   └── best_elasticnet.pkl
-├── houses_kaggle_competition.ipynb
-└── README.md
-```
-
-## Key Learnings
-
-1. **Domain Knowledge Matters**: Understanding what missing values mean in context (absence vs. missing) is crucial for proper imputation.
-
-2. **Pipeline Design**: Creating reusable, testable preprocessing pipelines with sklearn ensures consistency between train and test sets.
-
-3. **Feature Engineering Impact**: Thoughtful feature engineering (age features, transformations) can significantly improve model performance.
-
-4. **Model Diversity**: Combining different types of models (boosting, bagging, linear) in an ensemble often outperforms individual models.
-
-5. **Hyperparameter Tuning**: Systematic hyperparameter optimization (Optuna) is essential for achieving best performance.
-
-## References
-
-- [Kaggle Competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
-- Data documentation and feature descriptions from Kaggle

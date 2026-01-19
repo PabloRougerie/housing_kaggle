@@ -29,3 +29,9 @@ ENV/
 # Uncomment if data files are too large
 # data/*.csv
 
+# Backup files
+*_backup.ipynb
+*backup*.ipynb
+
+# CatBoost training info
+catboost_info/
